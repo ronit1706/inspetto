@@ -107,3 +107,101 @@ for i in range(2, 300):
         print(f"Transformed image saved to {output_path}")
     else:
         print(f"Failed to save transformed image to {output_path}")
+
+#############################################################################################################################################
+
+output_dir = "./Pitted/Pitted_Augmented"
+os.makedirs(output_dir, exist_ok=True)
+
+
+
+for i in range(2, 300):
+    img = cv2.imread(f"./Pitted/PS_{i}.bmp")
+    if img is None:
+        print(f"Image ./Pitted/PS_{i}.bmp not found.")
+        continue
+    else:
+        image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        transformed = transform(image = image)
+        transformed_image = transformed["image"]
+        transformed_image_bgr = cv2.cvtColor(transformed_image, cv2.COLOR_RGB2BGR)
+        img_normalized = cv2.normalize(transformed_image_bgr, None, 0, 1.0,cv2.NORM_MINMAX, dtype=cv2.CV_32F)
+        #print("Image data after Normalize:\n", img_normalized)
+        #This is to display the image ~
+        # plt.imshow(transformed_image_bgr)
+        # plt.axis('off')
+        # plt.show()
+
+    output_path = os.path.join(output_dir, f"transformed_PS_{i}.bmp")
+
+    status = cv2.imwrite(output_path, transformed_image_bgr)
+    if status:
+        print(f"Transformed image saved to {output_path}")
+    else:
+        print(f"Failed to save transformed image to {output_path}")
+
+#############################################################################################################################################
+
+output_dir = "./Rolled/Rolled_Augmented"
+os.makedirs(output_dir, exist_ok=True)
+
+
+
+for i in range(2, 300):
+    img = cv2.imread(f"./Rolled/RS_{i}.bmp")
+    if img is None:
+        print(f"Image ./Rolled/RS_{i}.bmp not found.")
+        continue
+    else:
+        image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        transformed = transform(image = image)
+        transformed_image = transformed["image"]
+        transformed_image_bgr = cv2.cvtColor(transformed_image, cv2.COLOR_RGB2BGR)
+        img_normalized = cv2.normalize(transformed_image_bgr, None, 0, 1.0,cv2.NORM_MINMAX, dtype=cv2.CV_32F)
+        #print("Image data after Normalize:\n", img_normalized)
+        #This is to display the image ~
+        # plt.imshow(transformed_image_bgr)
+        # plt.axis('off')
+        # plt.show()
+
+    output_path = os.path.join(output_dir, f"transformed_RS_{i}.bmp")
+
+    status = cv2.imwrite(output_path, transformed_image_bgr)
+    if status:
+        print(f"Transformed image saved to {output_path}")
+    else:
+        print(f"Failed to save transformed image to {output_path}")
+
+#############################################################################################################################################
+
+output_dir = "./Scratches/Scratches_Augmented"
+os.makedirs(output_dir, exist_ok=True)
+
+
+
+for i in range(2, 300):
+    img = cv2.imread(f"./Scratches/Sc_{i}.bmp")
+    if img is None:
+        print(f"Image ./Scratches/Sc_{i}.bmp not found.")
+        continue
+    else:
+        image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        transformed = transform(image = image)
+        transformed_image = transformed["image"]
+        transformed_image_bgr = cv2.cvtColor(transformed_image, cv2.COLOR_RGB2BGR)
+        img_normalized = cv2.normalize(transformed_image_bgr, None, 0, 1.0,cv2.NORM_MINMAX, dtype=cv2.CV_32F)
+        #print("Image data after Normalize:\n", img_normalized)
+        #This is to display the image ~
+        # plt.imshow(transformed_image_bgr)
+        # plt.axis('off')
+        # plt.show()
+
+    output_path = os.path.join(output_dir, f"transformed_Sc_{i}.bmp")
+
+    status = cv2.imwrite(output_path, transformed_image_bgr)
+    if status:
+        print(f"Transformed image saved to {output_path}")
+    else:
+        print(f"Failed to save transformed image to {output_path}")
+
+#############################################################################################################################################
