@@ -1,0 +1,12 @@
+<svg width="96" height="12" viewBox="0 0 96 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<rect id="Active Indicator" x="24" width="71.5" height="12" rx="6" fill="url(#paint0_linear_0_620)"/>
+<circle id="Oval" cx="6" cy="6" r="6" fill="#00E5FF"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_620" x1="-63.7824" y1="-9.3154" x2="-62.2971" y2="18.5139" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5FF"/>
+<stop offset="1" stop-color="#84FFFF"/>
+</linearGradient>
+</defs>
+</svg>

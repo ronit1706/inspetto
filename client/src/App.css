@@ -1,0 +1,23 @@
+.text-gradient {
+    background: linear-gradient(155deg, #3D0A5B -31.11%, #0052A0 27.8%, #D50032 96.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: radial-gradient(farthest-side,#651fff 94%,#0000) top/9px 9px no-repeat,
+          conic-gradient(#0000 30%,#651fff);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+   animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+   100% {
+      transform: rotate(1turn);
+   }
+}
