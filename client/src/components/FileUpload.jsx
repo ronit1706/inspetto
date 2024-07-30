@@ -1,5 +1,35 @@
+import {useState} from "react";
+import axios from "axios";
 
-function FileUpload() {
+function FileUpload(props) {
+
+      const selectedFile = props.selectedFile;
+      const setSelectedFile = props.setSelectedFile;
+      const previewImage = props.previewImage;
+      const setPreviewImage = props.setPreviewImage;
+
+      const handleFileChange = (event) => {
+        setSelectedFile(event.target.files[0]);
+        setPreviewImage(URL.createObjectURL(event.target.files[0]));
+      };
+
+      const handleUpload = () => {
+            const formData = new FormData();
+            formData.append('image', selectedFile);
+
+            axios.post('http://localhost:8080/upload', formData, {
+              headers: {
+                'Content-Type': 'ultipart/form-data',
+              },
+            })
+             .then((response) => {
+                console.log(response);
+              })
+             .catch((error) => {
+                console.error(error);
+              });
+      };
+
     return(
         <div>
             <label htmlFor="uploadFile1"
@@ -15,7 +45,7 @@ function FileUpload() {
 
                 Upload file
 
-                <input type="file" id='uploadFile1' className="hidden"/>
+                <input type="file" id='uploadFile1' className="hidden" onChange={handleFileChange}/>
                 <p className="text-xs font-medium text-gray-400 mt-2">PNG, JPG SVG, WEBP, and GIF are Allowed.</p>
             </label>
 

@@ -1,6 +1,10 @@
 import bwave1 from '../assets/BottomLeft.png'
 import bwave2 from '../assets/BottomRight.png'
 import akshat from '../assets/team/akshat.jpg'
+import deb from '../assets/team/deb.jpeg'
+import namneet from '../assets/team/Namneet.jpeg'
+import ronit from '../assets/team/ronit.jpeg'
+import utkarsh from '../assets/team/utkarsh.jpeg'
 import DevCard from "../components/DevCard.jsx"
 
 function Team() {
@@ -22,9 +26,9 @@ function Team() {
                 >
                     <div className="w-[400px]">
                         <DevCard
-                            title={"Front End Developer"}
+                            title={"Full Stack Developer"}
                             name={"Akshat Sharma"}
-                            content={"Frontend wizard conjuring captivating and seamless user experiences through deft wielding of Reacts."}
+                            content={"Development wizard conjuring captivating and seamless user experiences through deft wielding of MERN."}
                             image={akshat}
                             linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}
                             github={"https://github.com/Akkkshattt-Sharrrmaaa"}
@@ -32,104 +36,46 @@ function Team() {
                     </div>
                     <div className="w-[400px]">
                         <DevCard
-                            title={"Front End Developer"}
-                            name={"Akshat Sharma"}
-                            content={"Frontend wizard conjuring captivating and seamless user experiences through deft wielding of Reacts."}
-                            image={akshat}
+                            title={"ML Researcher"}
+                            name={"Debarghya Deb"}
+                            content={"Mathematical virtuoso wielding the power of algorithms and statistical models to unlock hidden patterns and insights."}
+                            image={deb}
+                            linkedin={"linkedin.com/in/debarghya-deb-56a280141"}
+                            github={"https://github.com/iDream2"}
+                        />
+                    </div>
+                    <div className="w-[400px]">
+                        <DevCard
+                            title={"UI/UX Specialist"}
+                            name={"Namneet Kaur"}
+                            content={"Design virtuoso fueled by a passion for crafting intuitive and stunning digital landscapes that delight users."}
+                            image={namneet}
+                            linkedin={"https://www.linkedin.com/in/namneet-kaur-371a60257"}
+                            github={"https://github.com/Namneet2001"}
+                        />
+                    </div>
+                    <div className="w-[400px]">
+                        <DevCard
+                            title={"ML Engineer"}
+                            name={"Ronit Khurana"}
+                            content={"Machine learning maestro unlocking hidden insights and predictive power through masterful orchestration of data"}
+                            image={ronit}
                             linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}
                             github={"https://github.com/Akkkshattt-Sharrrmaaa"}
                         />
                     </div>
                     <div className="w-[400px]">
                         <DevCard
-                            title={"Front End Developer"}
-                            name={"Akshat Sharma"}
-                            content={"Frontend wizard conjuring captivating and seamless user experiences through deft wielding of Reacts."}
-                            image={akshat}
-                            linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}
-                            github={"https://github.com/Akkkshattt-Sharrrmaaa"}
-                        />
-                    </div>
-                    <div className="w-[400px]">
-                        <DevCard
-                            title={"Front End Developer"}
-                            name={"Akshat Sharma"}
-                            content={"Frontend wizard conjuring captivating and seamless user experiences through deft wielding of Reacts."}
-                            image={akshat}
-                            linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}
-                            github={"https://github.com/Akkkshattt-Sharrrmaaa"}
-                        />
-                    </div>
-                    <div className="w-[400px]">
-                        <DevCard
-                            title={"Front End Developer"}
-                            name={"Akshat Sharma"}
-                            content={"Frontend wizard conjuring captivating and seamless user experiences through deft wielding of Reacts."}
-                            image={akshat}
+                            title={"ML Researcher"}
+                            name={"Utkarsh Rastogi"}
+                            content={"Architect of intelligent systems, bridging the gap between data science, software engineering and deep learning."}
+                            image={utkarsh}
                             linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}
                             github={"https://github.com/Akkkshattt-Sharrrmaaa"}
                         />
                     </div>
 
                 </div>
-
-                {/*<div className="flex flex-wrap mx-auto gap-x-1">*/}
-                {/*    <div className="w-1/3 min-w-[200px]">*/}
-                {/*        <DevCard*/}
-                {/*            title={"Front End Developer"}*/}
-                {/*            name={"Akshat Sharma"}*/}
-                {/*            content={"Frontend wizard conjuring captivating and seamless user experiences through deft wielding of Reacts."}*/}
-                {/*            image={akshat}*/}
-                {/*            linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}*/}
-                {/*            github={"https://github.com/Akkkshattt-Sharrrmaaa"}*/}
-                {/*        />*/}
-                {/*    </div>*/}
-
-                {/*    <div className="w-1/3">*/}
-                {/*        <DevCard*/}
-                {/*            title={"Front End Developer"}*/}
-                {/*            name={"Akshat Sharma"}*/}
-                {/*            content={"Frontend wizard conjuring captivating and seamless user experiences through deft rst styling prowess."}*/}
-                {/*            image={akshat}*/}
-                {/*            linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}*/}
-                {/*            github={"https://github.com/Akkkshattt-Sharrrmaaa"}*/}
-                {/*        />*/}
-                {/*    </div>*/}
-
-                {/*    <div className="w-1/3">*/}
-                {/*        <DevCard*/}
-                {/*            title={"Front End Developer"}*/}
-                {/*            name={"Akshat Sharma"}*/}
-                {/*            content={" Conjuring captivating and seamless user experiences through ilwind CSS's utility-first styling prowess."}*/}
-                {/*            image={akshat}*/}
-                {/*            linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}*/}
-                {/*            github={"https://github.com/Akkkshattt-Sharrrmaaa"}*/}
-                {/*        />*/}
-                {/*    </div>*/}
-
-                {/*    <div className="w-1/3">*/}
-                {/*        <DevCard*/}
-                {/*            title={"Front End Developer"}*/}
-                {/*            name={"Akshat Sharma"}*/}
-                {/*            content={" experiences through  React's powerful capabilities, combined with Tailwind CSS's utility-first styling prowess."}*/}
-                {/*            image={akshat}*/}
-                {/*            linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}*/}
-                {/*            github={"https://github.com/Akkkshattt-Sharrrmaaa"}*/}
-                {/*        />*/}
-                {/*    </div>*/}
-
-                {/*    <div className="w-1/3">*/}
-                {/*        <DevCard*/}
-                {/*            title={"Front End Developer"}*/}
-                {/*            name={"Akshat Sharma"}*/}
-                {/*            content={"conjuring gh deft wielding of React's powerful capabilities, combined with Tailwind CSS's utility-first styling prowess."}*/}
-                {/*            image={akshat}*/}
-                {/*            linkedin={"https://www.linkedin.com/in/akkkshattt-sharrrmaaa/"}*/}
-                {/*            github={"https://github.com/Akkkshattt-Sharrrmaaa"}*/}
-                {/*        />*/}
-                {/*    </div>*/}
-
-                {/*</div>*/}
 
                 <img
                     src={bwave1}

@@ -1,3 +1,5 @@
+import os
+
 import numpy as np
 from flask import Flask, request, jsonify
 import tensorflow as tf
@@ -7,7 +9,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-model_path = "/Users/akshatsharma/Developer/IBM/Inspetto/server/VGG model.h5"
+model_path = "/Users/akshatsharma/Developer/IBM/Project/inspetto/server/VGG model.h5"
 
 
 def load_model(model_path):
@@ -43,7 +45,10 @@ def predict():
             if img_file.filename == '':
                 return jsonify({'error': 'No image provided'})
 
-            img = Image.open(img_file)
+            temp_file_path = os.path.join('/tmp', img_file.filename)
+            img_file.save(temp_file_path)
+
+            img = Image.open(temp_file_path)
             processed_image = preprocess_image(img)
 
             predictions = model.predict(processed_image)
