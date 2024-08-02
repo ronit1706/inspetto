@@ -1,12 +1,1 @@
-<svg width="96" height="12" viewBox="0 0 96 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group">
-<rect id="Active Indicator" x="24" width="71.5" height="12" rx="6" fill="url(#paint0_linear_0_617)"/>
-<circle id="Oval" cx="6" cy="6" r="6" fill="#651FFF"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_0_617" x1="-24.0293" y1="-2.9274" x2="-22.6907" y2="19.7886" gradientUnits="userSpaceOnUse">
-<stop stop-color="#651FFF"/>
-<stop offset="1" stop-color="#D1C4E9"/>
-</linearGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="12" fill="none" viewBox="0 0 96 12"><g id="Group"><rect id="Active Indicator" width="71.5" height="12" x="24" fill="url(#paint0_linear_0_617)" rx="6"/><circle id="Oval" cx="6" cy="6" r="6" fill="#651FFF"/></g><defs><linearGradient id="paint0_linear_0_617" x1="-24.029" x2="-22.691" y1="-2.927" y2="19.789" gradientUnits="userSpaceOnUse"><stop stop-color="#651FFF"/><stop offset="1" stop-color="#D1C4E9"/></linearGradient></defs></svg>
